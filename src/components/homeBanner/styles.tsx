@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import home_banner from '../../assets/home_banner.jpg'
-import { GRAY_SCALE_0, PRIMARY, SECONDARY } from "../general/colors"
+import { GRAY_SCALE_0, GRAY_SCALE_300, PRIMARY, SECONDARY } from "../general/colors"
 
 export const HomeBannerContainer = styled.div`
     width: 100vw;
@@ -19,6 +19,10 @@ export const HomeBannerContainer = styled.div`
         top: 0;
         left: 0;
         z-index: 1;
+    }
+    @media (max-width: 768px) {
+      height: auto;
+      padding-bottom: 30px;
     }
 `
 
@@ -55,6 +59,9 @@ export const SearchBar = styled.div`
   padding: 10px;
   box-sizing: border-box;
   z-index: 1;
+  @media (max-width: 768px) {
+    display: block;
+}
 `
 
 export const CustomSelect = styled.select`
@@ -63,6 +70,12 @@ export const CustomSelect = styled.select`
   box-sizing: border-box;
   outline: none;
   max-width: 150px;
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+    background: ${GRAY_SCALE_300};
+  }
 `
 export const SearchInput = styled.input`
   border: none;
@@ -70,6 +83,12 @@ export const SearchInput = styled.input`
   box-sizing: border-box;
   max-width: 100%;
   outline: none;
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+    background: ${GRAY_SCALE_300};
+  }
 `
 
 export const CustomLinksWrapper = styled.div`
@@ -91,4 +110,7 @@ export const CustomButton = styled.button`
   padding: 20px;
   border: none;
   color: #FFFFFF;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
