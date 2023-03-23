@@ -1,9 +1,12 @@
 import React from 'react';
-import logo from './assets/logo.png'
+import Navbar from './components/header';
+import HomeBanner from './components/homeBanner';
+
 function App() {
   return (
     <div className="App">
-      <img src={logo} alt="" />
+      <Navbar isMobile={false} />
+      <HomeBanner />
     </div>
   );
 }

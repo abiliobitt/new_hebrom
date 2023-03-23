@@ -1,6 +1,6 @@
 export const PRIMARY = '#6D0000'
 export const PRIMARY_HOVER = '#9C0914'
-export const SECONDARY = '#121926'
+export const SECONDARY = '#E5A417'
 export const GRAY_SCALE_0 = '#FFFFFF'
 export const GRAY_SCALE_50 = '#FCFCFD'
 export const GRAY_SCALE_100 = '#F8FAFC'
