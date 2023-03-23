@@ -10,7 +10,7 @@ const HomeBanner: FC<HomeBannerProps> = ({ children }) => {
     return (
         <HomeBannerContainer>
             <SearchBox>
-            <h1>Seu sonho, nossa missão!</h1>
+            <h1>Seu imóvel, nossa missão!</h1>
             <p>A Hebrom Serviços Imobiliários está aqui para te auxiliar na aquisição do seu imóvel dos sonhos!</p>
         <SearchBar>
               <CustomSelect>
