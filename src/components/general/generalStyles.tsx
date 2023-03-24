@@ -5,6 +5,8 @@ export const Container = styled.div`
     width: 80%;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     @media (max-width: 768px) {
         width: 100%;
         display: block;
@@ -33,5 +35,8 @@ export const SectionTitle = styled.h1`
     }
     &.-secondary {
         background: ${SECONDARY}b0;
+    }
+    &.-center-text {
+        text-align: center;
     }
 `

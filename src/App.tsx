@@ -1,4 +1,7 @@
 import React from 'react';
+import Card from './components/card';
+import Footer from './components/footer';
+import { Container, SectionTitle } from './components/general/generalStyles';
 import TextSection from './components/general/textSection';
 import Navbar from './components/header';
 import HomeBanner from './components/homeBanner';
@@ -36,6 +39,20 @@ function App() {
         textLink='Veja mais'
         link='#'
       />
+      <section>
+      <SectionTitle className={'-primary -center-text'}>Imóveis</SectionTitle>
+      <Container>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </Container>
+      </section>
+      <Footer />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { Container, Half, SectionTitle } from '../generalStyles'
-import { P, TextLink, TextSectionContainer } from './styles'
+import { ImageLeft, P, TextLink, TextSectionContainer } from './styles'
 
 
 interface TextSectionProps {
@@ -29,11 +29,13 @@ const TextSection: FC<TextSectionProps> = ({ title, p, imageUrl, variant, imgPos
     </>
     const leftImg = <>
         <Half>
-            <img src={imageUrl} alt="" />
+            <ImageLeft>
+                <img src={imageUrl} alt="" />
+            </ImageLeft>
         </Half>
         <Half>
             <SectionTitle className={variant}>{title}</SectionTitle>
-            <P className={variant}>
+            <P className={`${variant} -left`}>
                 {p}
                 {textLink && link && <TextLink href={link} className={variant}>{textLink}</TextLink>}
             </P>

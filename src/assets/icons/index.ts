@@ -1,0 +1,6 @@
+export {default as area} from './area.png'
+export {default as bed} from './bed.png'
+export {default as building} from './building.png'
+export {default as car} from './car.png'
+export {default as shower} from './shower.png'
+export {default as insta } from './instagram.png'
